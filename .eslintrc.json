@@ -1,0 +1,25 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": { // 타입 정보를 필요로 하는 규칙들 사용
+        "project": "./tsconfig.json",
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["dist/", "node_modules/"],
+    // ESlint가 무시할 폴더, 파일 적어주기
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+    }
+}
